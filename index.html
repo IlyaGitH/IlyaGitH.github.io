@@ -163,10 +163,10 @@ async function start_game() {
     const moveRocket = () => {
         if (!isGameRunning) return;
         
-        if (keysPressed.ArrowUp && posY !== -300) posY -= speed;
-        if (keysPressed.ArrowDown && posY !== 80) posY += speed;
-        if (keysPressed.ArrowLeft && posX !== -300) posX -= speed;
-        if (keysPressed.ArrowRight && posX !== 280) posX += speed;
+        if ((keysPressed.ArrowUp || keysPressed.w || keysPressed.W || keysPressed.ц || keysPressed.Ц) && posY !== -300) posY -= speed;
+        if ((keysPressed.ArrowDown || keysPressed.s || keysPressed.S || keysPressed.ы || keysPressed.Ы) && posY !== 80) posY += speed;
+        if ((keysPressed.ArrowLeft || keysPressed.a || keysPressed.A || keysPressed.ф || keysPressed.Ф) && posX !== -300) posX -= speed;
+        if ((keysPressed.ArrowRight || keysPressed.d || keysPressed.D || keysPressed.в || keysPressed.В) && posX !== 280) posX += speed;
         
         object.style.transform = `translate(${posX}px, ${posY}px)`;
         moveAnimationFrame = requestAnimationFrame(moveRocket);
