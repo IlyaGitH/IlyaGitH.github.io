@@ -1,0 +1,166 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a2a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.game-container {
+    width: 600px;
+    border: 2px solid #4a4a8a;
+    border-radius: 10px;
+    background-color: #121240;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.5);
+    overflow: hidden;
+}
+
+.game-header {
+    background-color: #1a1a5a;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #4a4a8a;
+}
+
+.game-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.input-field {
+    margin: 15px 0;
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #4a4a8a;
+    border-radius: 5px;
+    background-color: #0a0a2a;
+    color: white;
+    font-size: 16px;
+}
+
+.difficulty-options {
+    text-align: left;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.difficulty-option {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a8a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #3a3aaa;
+}
+
+.button-primary {
+    background-color: #4a4aaa;
+}
+
+.button-primary:hover {
+    background-color: #5a5aba;
+}
+
+/* Игровой интерфейс */
+.game-ui {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #1a1a5a;
+    border-bottom: 1px solid #4a4a8a;
+}
+
+.game-canvas {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background-color: #050510;
+}
+
+.rocket {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffaa00;
+    font-size: 24px;
+    text-align: center;
+    transition: transform 0.1s;
+}
+
+.asteroid {
+    position: absolute;
+    color: #888888;
+    font-size: 40px;
+    animation: meteor_muv 4s linear infinite;
+    height: 22px;
+
+}
+
+.hp_item {
+    position: absolute;
+    color: red;
+    font-size: 40px;
+    animation: meteor_muv 4s linear infinite;
+    height: 22px;
+
+}
+
+.fuel_item {
+    position: absolute;
+    color: green;
+    font-size: 40px;
+    animation: meteor_muv 4s linear infinite;
+    height: 22px;
+}
+
+.health-bar, .fuel-bar {
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.health-bar {
+    background-color: #ff3333;
+    width: 100%;
+}
+
+.fuel-bar {
+    background-color: #33aa33;
+    width: 100%;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes meteor_muv {
+    0% {
+        top: -20px;
+    }
+
+    100%{
+        top: 400px;
+    }
+}
