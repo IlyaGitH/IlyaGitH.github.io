@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Учебные заведения | АгроПуть</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="dark-header">
+        <div class="logo">
+            <img src="logo-light.svg" alt="АгроПуть">
+            <span>АгроПуть</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="professions.html">Профессии</a></li>
+                <li><a href="events.html">Дни открытых дверей</a></li>
+                <li><a href="universities.html" class="active">Учебные заведения</a></li>
+                <li><a href="competitions.html">Конкурсы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dark-main">
+        <section class="page-header">
+            <h1>Учебные заведения АПК</h1>
+            <p>Выбери вуз или колледж для получения профессии в агропромышленном комплексе</p>
+            
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="region-filter">Регион:</label>
+                    <select id="region-filter">
+                        <option value="all">Все регионы</option>
+                        <option value="central">Центральный</option>
+                        <option value="south">Южный</option>
+                        <option value="volga">Приволжский</option>
+                        <option value="siberia">Сибирский</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="type-filter">Тип:</label>
+                    <select id="type-filter">
+                        <option value="all">Все</option>
+                        <option value="university">Вузы</option>
+                        <option value="college">Колледжи</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="universities-container">
+            <div class="university-card">
+                <div class="university-image" style="background-image: url('timiryazev.jpg');"></div>
+                <div class="university-info">
+                    <h3>РГАУ-МСХА им. К.А. Тимирязева</h3>
+                    <p class="university-location">Москва</p>
+                    <p class="university-type">Государственный университет</p>
+                    <div class="university-specialties">
+                        <h4>Основные направления:</h4>
+                        <ul>
+                            <li>Агрономия</li>
+                            <li>Агроинженерия</li>
+                            <li>Ветеринария</li>
+                            <li>Биотехнологии</li>
+                        </ul>
+                    </div>
+                    <div class="university-actions">
+                        <a href="https://www.timacad.ru" class="university-link" target="_blank">Сайт</a>
+                        <a href="events.html" class="university-link">Дни открытых дверей</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="university-card">
+                <div class="university-image" style="background-image: url('kuban.jpg');"></div>
+                <div class="university-info">
+                    <h3>Кубанский государственный аграрный университет</h3>
+                    <p class="university-location">Краснодар</p>
+                    <p class="university-type">Государственный университет</p>
+                    <div class="university-specialties">
+                        <h4>Основные направления:</h4>
+                        <ul>
+                            <li>Агрохимия</li>
+                            <li>Садоводство</li>
+                            <li>Технологии переработки</li>
+                            <li>Цифровое сельское хозяйство</li>
+                        </ul>
+                    </div>
+                    <div class="university-actions">
+                        <a href="https://www.kubsau.ru" class="university-link" target="_blank">Сайт</a>
+                        <a href="events.html" class="university-link">Дни открытых дверей</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="university-card">
+                <div class="university-image" style="background-image: url('novosib.jpg');"></div>
+                <div class="university-info">
+                    <h3>Новосибирский аграрный колледж</h3>
+                    <p class="university-location">Новосибирск</p>
+                    <p class="university-type">Колледж</p>
+                    <div class="university-specialties">
+                        <h4>Основные направления:</h4>
+                        <ul>
+                            <li>Механизация сельского хозяйства</li>
+                            <li>Ветеринария</li>
+                            <li>Эксплуатация сельхозтехники</li>
+                            <li>Землеустройство</li>
+                        </ul>
+                    </div>
+                    <div class="university-actions">
+                        <a href="http://www.nsah.ru" class="university-link" target="_blank">Сайт</a>
+                        <a href="events.html" class="university-link">Дни открытых дверей</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="dark-footer" id="contacts">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: info@agropath.ru</p>
+                <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="vk-icon.svg" alt="VK"></a>
+                    <a href="#"><img src="tg-icon.svg" alt="Telegram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 АгроПуть. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

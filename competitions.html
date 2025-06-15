@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конкурсы в АПК | АгроПуть</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="dark-header">
+        <div class="logo">
+            <img src="logo-light.svg" alt="АгроПуть">
+            <span>АгроПуть</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="professions.html">Профессии</a></li>
+                <li><a href="events.html">Дни открытых дверей</a></li>
+                <li><a href="universities.html">Учебные заведения</a></li>
+                <li><a href="competitions.html" class="active">Конкурсы</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="dark-main">
+        <section class="page-header">
+            <h1>Конкурсы в АПК</h1>
+            <p>Актуальные профессиональные соревнования и мероприятия для студентов и специалистов</p>
+            
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="type-filter">Тип конкурса:</label>
+                    <select id="type-filter">
+                        <option value="all">Все</option>
+                        <option value="student">Для студентов</option>
+                        <option value="professional">Для специалистов</option>
+                        <option value="international">Международные</option>
+                    </select>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="date-filter">Период:</label>
+                    <select id="date-filter">
+                        <option value="all">Все</option>
+                        <option value="month">Ближайший месяц</option>
+                        <option value="quarter">Ближайший квартал</option>
+                        <option value="year">В этом году</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="competitions-container">
+            <div class="competition-card">
+                <div class="competition-header">
+                    <div class="competition-date">
+                        <span class="day">15</span>
+                        <span class="month">окт</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="competition-title">
+                        <h3>Всероссийский конкурс "АгроНТРИ"</h3>
+                        <span class="competition-type international">Всероссийский</span>
+                        <span class="competition-type student">Для школьников</span>
+                    </div>
+                </div>
+                <div class="competition-info">
+                    <p>Конкурс по цифровым технологиям в сельском хозяйстве для студентов аграрных вузов</p>
+                    <div class="competition-details">
+                        <p><strong>Организатор:</strong> Фонд содействия инновациям</p>
+                        <p><strong>Место проведения:</strong> Москва</p>
+                        <p><strong>Регистрация до:</strong> 1 октября 2025</p>
+                    </div>
+                    <a href="#" class="competition-link">Подробнее и регистрация</a>
+                </div>
+            </div>
+
+            <div class="competition-card">
+                <div class="competition-header">
+                    <div class="competition-date">
+                        <span class="day">20</span>
+                        <span class="month">ноя</span>
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="competition-title">
+                        <h3>Международный чемпионат "Профессионалы"</h3>
+                        <span class="competition-type international">Всероссийский</span>
+                        <span class="competition-type student">Для школьников и студентов</span>
+                    </div>
+                </div>
+                <div class="competition-info">
+                    <p>Соревнования профессионального мастерства среди молодых специалистов</p>
+                    <div class="competition-details">
+                        <p><strong>Организатор:</strong> Институт развития профессионального образования</p>
+                        <p><strong>Место проведения:</strong> Санкт-Петербург</p>
+                        <p><strong>Регистрация до:</strong> 15 октября 2025</p>
+                    </div>
+                    <a href="#" class="competition-link">Подробнее и регистрация</a>
+                </div>
+            </div>
+
+            <!-- Добавьте больше конкурсов по аналогии -->
+        </section>
+    </main>
+
+    <footer class="dark-footer" id="contacts">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p>Email: info@agropath.ru</p>
+                <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+            </div>
+            <div class="footer-section">
+                <h3>Социальные сети</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="vk-icon.svg" alt="VK"></a>
+                    <a href="#"><img src="tg-icon.svg" alt="Telegram"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 АгроПуть. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
