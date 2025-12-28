@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN | Контакты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+    <div class="cursor-crosshair"></div>
+    <div class="grid-background"></div>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo">TITAN<span class="reg">®</span></a>
+        <div class="menu">
+            <a href="index.html" class="menu-link">Главная</a>
+            <a href="services.html" class="menu-link">Производство</a>
+            <a href="equipment.html" class="menu-link">Оборудование</a>
+            <a href="contact.html" class="menu-link active">Контакты</a>
+        </div>
+    </nav>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+            
+            <section class="contact-section">
+                <div class="container contact-grid">
+                    
+                    <div class="contact-info">
+                        <h1 class="page-title">Начать<br>Проект</h1>
+                        <div class="info-block">
+                            <span class="label">EMAIL</span>
+                            <a href="mailto:orders@titan.dev" class="link-hover">orders@titan.dev</a>
+                        </div>
+                        <div class="info-block">
+                            <span class="label">PHONE</span>
+                            <a href="tel:+79990000000" class="link-hover">+7 (999) 000-00-00</a>
+                        </div>
+                        <div class="info-block">
+                            <span class="label">ADDRESS</span>
+                            <p>Industrial District, Sector 4<br>Moscow, Russia</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <form class="tech-form">
+                            <div class="form-group">
+                                <label>Имя / Компания</label>
+                                <input type="text" placeholder="Введите название...">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="example@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Тип услуги</label>
+                                <select>
+                                    <option>Фрезеровка ЧПУ</option>
+                                    <option>Лазерная резка</option>
+                                    <option>Прототипирование</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Описание задачи</label>
+                                <textarea rows="4" placeholder="Краткое описание деталей..."></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit">ОТПРАВИТЬ ЗАПРОС <span class="arrow">→</span></button>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+            
+            <div class="full-width-img">
+                 <img src="https://images.unsplash.com/photo-1565439398534-7301c2789477?q=80&w=2000&auto=format&fit=crop" alt="Factory Interior">
+                 <div class="overlay-gradient"></div>
+            </div>
+
+            <footer class="footer">
+                <div class="container"><p>© 2025 Titan Precision.</p></div>
+            </footer>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
